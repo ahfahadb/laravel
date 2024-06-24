@@ -1,1 +1,7 @@
+//show the data
+//First we create a model to connect database
 
+
+//Example
+$users = user::all();
+return view('index', compact('users'));
