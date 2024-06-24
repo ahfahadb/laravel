@@ -15,6 +15,8 @@ $users = User::latest()->get();
 return view('index', compact('users'));
 
 //foreach index file
+// here loop is laravel keywords and id,name etc database table colunm name
+
 
 
 <table class="table table-bordered">
