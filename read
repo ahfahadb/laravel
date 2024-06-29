@@ -23,8 +23,12 @@ return view('index', compact('users', 'totalusers'));
 // here loop is laravel keywords and id,name etc database table colunm name
 // if we use paginate it code
 
-
+// 1, 2, 3 paginate
 $users = User::latest()->paginate(5);
+return view('index', compact('users'));
+
+// previous, next paginate
+$users = User::latest()->simplePaginate(5);
 return view('index', compact('users'));
 
 
