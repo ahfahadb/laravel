@@ -29,6 +29,11 @@ return view('index', [
 ]);
 
 
+//Example for show data 6 way
+
+return view('index')->with('users', User::latest()->simplePaginate(5))->with('totalusers', User::count();
+
+
 
 
 
