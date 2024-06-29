@@ -14,6 +14,24 @@ return view('index', compact('users'));
 $users = User::latest()->get();
 return view('index', compact('users'));
 
+//Example for show data 4 way
+$users = User::latest()->get();
+$totalusers = User::count();
+return view('index', [
+'users' => $users,
+'totalusers' => $totalusers
+]);
+
+//Example for show data 5 way
+return view('index', [
+'users' => User::latest()->get();
+'totalusers' => User::count();
+]);
+
+
+
+
+
 //Total user find
 $users = User::latest()->get();
 $totalusers = User::count();   // this code just
