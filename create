@@ -1,1 +1,20 @@
+// first we will create a controller
+// then route connet
 
+
+
+
+Route::get('', [CategoryController::class, 'addcategory']);
+
+// CategoryController
+
+<?php
+ 
+namespace App\Http\Controllers;
+ 
+class CategoryController extends Controller
+{
+    function addcategory(){
+        return view(index);
+    }
+}
