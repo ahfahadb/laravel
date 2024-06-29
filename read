@@ -51,7 +51,7 @@ return view('index', compact('users'));
       <td>{{ $user->id }}</td>
       <td>{{ $user->name }}</td>
       <td>{{ $user->email }}</td>
-      <td>{{ $user->created_at }}</td>
+      <td><li>{{ $user->created_at->diffForHumans() }}</li></td>
     </tr>
   @endforeach
   </tbody>
