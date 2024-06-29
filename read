@@ -14,8 +14,15 @@ return view('index', compact('users'));
 $users = User::latest()->get();
 return view('index', compact('users'));
 
+//Total user find
+$users = User::latest()->get();
+$totalusers = User::count();   // this code just
+return view('index', compact('users', 'totalusers'));
+
 //foreach index file
 // here loop is laravel keywords and id,name etc database table colunm name
+// if we use paginate it code
+
 
 
 
