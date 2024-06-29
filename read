@@ -26,6 +26,9 @@ return view('index', compact('users', 'totalusers'));
 
 
 
+<h1>Total User: {{ $totalusers }} </h1>
+
+
 <table class="table table-bordered">
   <thead>
     <tr>
